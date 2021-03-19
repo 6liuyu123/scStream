@@ -1,0 +1,40 @@
+﻿<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login & Registration</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/dmaku.css">
+</head>
+
+<body>
+<div class="login-page">
+    <div class="form">
+        <form class="register-form" action="/add" method="GET">
+            <input value="" placeholder="用户名" type="text" name="name">
+            <input type="password" placeholder="密码" name="password">
+            <!-- <input placeholder="邮箱"> -->
+            <button>注册</button>
+            <p class="message">已有账号? <a href="javascript:">立即登录</a></p>
+        </form>
+        <form class="login-form" action="/login" method="GET">
+            <input value="" placeholder="用户名" type="text" name="name">
+            <input type="password" placeholder="密码" name="password">
+            <button>登录</button>
+            <p class="message">还没有账号？<a href="javascript:">立即注册</a></p>
+        </form>
+    </div>
+</div>
+<!-- <div class="all">
+    <h2><a href="/all">查看所有注册账号信息</a></h2>
+</div> -->
+<script src="js/jquery.min.js"></script>
+<script src="js/dmaku.js"></script>
+<style>
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+</style>
+<!-- <div class="copyrights" id="links20210126">
+	Collect from <a href="http://www.cssmoban.com/"  title="网站模板">模板之家</a>
+	<a href="https://www.chazidian.com/"  title="查字典">查字典</a>
+</div> -->
+</body>
+</html>
